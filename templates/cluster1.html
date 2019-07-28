@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Kashif Iqbal - 4615</h2>
+    <hr>
+    <h1>Clusters:</h1>
+    <br>
+    <img src="{{pic}}" alt="Not found">
+    <br>
+    {% for row in exp %}
+    <br>
+      <h2>Cluster # {{row['clusterNumber']}}</h2>
+      <h3>Number of points in Cluster: {{row['numElements']}}</h3>
+      <h3>Position of Centroid: ({{row['x']}} , {{row['y']}})</h3>
+      <h3>Diameter of Centroid: {{row['diameter']}}</h3>
+      <br>
+      <hr>
+    {% endfor %}
+
+  <h2> <a href = "/">Home</a> </h2>
+  </body>
+
+</html>

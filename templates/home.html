@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<body>
+
+		<left>
+		<h2>Cloud Computing</h2>
+		<hr>
+		<header> <h1> Home </h1> </header>
+		<br>
+		<br>
+		<h2><u>Clusters</u></h2>
+				<br>
+				<br>
+				<form class="" action="{{ url_for('cluster1')}}"  method="post">
+					<label for="y"></label>
+					<select name = "y">
+					  <option value="fare">Fare</option>
+					  <option value="age">Age</option>
+					  <option value="pclass">Passenger Class</option>
+					  <option value="survived">Survived</option>
+					</select>
+					<label for="x"> VS </label>
+					<select name = "x">
+					  <option value="fare">Fare</option>
+					  <option value="age">Age</option>
+					  <option value="pclass">Passenger Class</option>
+					  <option value="survived">Survived</option>
+					</select>
+					<label for="num">Number of Clusters: </label>
+					<input type="number" name="num" value="">
+					<br><br><br>
+					<input type="submit" name="" value="Search">
+				</form>
+
+				<br>
+				<br>
+
+	</body>
+</html>
